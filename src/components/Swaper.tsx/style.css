@@ -1,0 +1,74 @@
+body {
+    --black: #000000;
+    --ash-black: #222;
+    --white: #fafafa;
+    --sky: #00ccff;
+    --green: #22dddd;
+    --blue: #1300ff;
+    --dusk: #6600ff;
+    --purple: #9900ff;
+    --pink: #ff0066;
+    --red: #fe0222;
+    --orange: #fd7702;
+    --yellow: #ffbb00;
+    --mainColor:#020910;
+    --background: var(--purple);
+    --accent: var(--white);
+  
+    margin: 0;
+    padding: 0;
+    background-color: var(--mainColor);
+    color: var(--accent);
+  }
+  
+
+  
+  code {
+    font-family: input-mono, monospace;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  ::-webkit-scrollbar {
+    height: 5px;
+    width: 5px;
+    background: var(--mainColor);
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: var(--mainColor);
+    -webkit-border-radius: 1ex;
+  }
+  
+  ::-webkit-scrollbar-corner {
+    background: var(--background);
+  }
+  
+  html {
+    scroll-snap-type: y mandatory;
+  }
+  
+  .parallax {
+    overflow: hidden;
+    letter-spacing: -2px;
+    line-height: 0.8;
+    margin: 0;
+    white-space: nowrap;
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  
+  .parallax .scroller {
+    font-weight: 600;
+    font-size: 52px;
+    display: flex;
+    gap: 20px;
+    white-space: nowrap;
+    flex-wrap: nowrap;
+  }
+  
+  .parallax span {
+    display: block;
+    margin-right: 10px;
+  }
+  
