@@ -1,11 +1,13 @@
+import dynamic from 'next/dynamic'
+
 import FirstSections from "@/components/FirstSection/FirstSections";
 import MyBrain from "@/components/MyIdia/MyBrain";
 import Navbar from "@/components/navbar/Navbar";
 import SecondSection from "@/components/SecondSection/SecondSection";
-import ThierdSections from "@/components/ThierdSection/ThierdSections";
-import VideoSection from "@/components/VideoSection/VideoSection";
+import AboutSection from '@/components/AboutSection/AboutSection';
 
-
+const VideoSection = dynamic(() => import("@/components/VideoSection/VideoSection"), { ssr: true })
+const ThierdSections = dynamic(() => import("@/components/ThierdSection/ThierdSections"), { ssr: true })
 
 export default function Home() {
   return (
@@ -14,6 +16,7 @@ export default function Home() {
         <Navbar />
         <div className="flex flex-col gap-16 lg:mb-20 md:mb-0 mb-0 ">
           <FirstSections />
+          <AboutSection />
           <ThierdSections />
           <SecondSection />
         </div>
