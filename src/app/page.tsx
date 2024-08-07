@@ -5,6 +5,7 @@ import MyBrain from "@/components/MyIdia/MyBrain";
 import Navbar from "@/components/navbar/Navbar";
 import SecondSection from "@/components/SecondSection/SecondSection";
 import AboutSection from '@/components/AboutSection/AboutSection';
+import { Suspense } from 'react';
 
 const VideoSection = dynamic(() => import("@/components/VideoSection/VideoSection"), { ssr: true })
 const ThierdSections = dynamic(() => import("@/components/ThierdSection/ThierdSections"), { ssr: true })
@@ -17,7 +18,9 @@ export default function Home() {
         <div className="flex flex-col gap-16 lg:mb-20 md:mb-0 mb-0 ">
           <FirstSections />
           <AboutSection />
-          <ThierdSections />
+          <Suspense fallback={null}>
+            <ThierdSections />
+          </Suspense>
           <SecondSection />
         </div>
         <div className="lg:block md:block hidden">
