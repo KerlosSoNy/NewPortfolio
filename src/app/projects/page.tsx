@@ -1,7 +1,8 @@
 import Link from "next/link"
-
+import { unstable_noStore as noStore } from "next/cache"
 
 const getData = async () => {
+    noStore();
     const res = await fetch('https://jsonplaceholder.typicode.com/todos', { cache: 'no-store' })
     // To Cash With Duration
     // For A Min (60s)

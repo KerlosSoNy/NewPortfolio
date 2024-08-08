@@ -3,15 +3,21 @@
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay } from 'swiper/modules';
-
+import redak from '../../../../public/assets/projects/redak.png'
 // Import Swiper styles
 import 'swiper/css';
 
 import Image from 'next/image';
+import Link from 'next/link';
 
 const SwiperDemo = () => {
 
-
+    const Data = [{
+        id: 1,
+        title: 'Redak',
+        image: redak,
+        short_description: "Medical WebSite"
+    }]
     return (
         <div className='w-[70%] mx-auto'>
             <Swiper
@@ -27,12 +33,12 @@ const SwiperDemo = () => {
                 }}
                 effect='coverflow'
                 grabCursor={true}
-                slidesPerView={3}
+                slidesPerView={2}
                 coverflowEffect={{
-                    rotate: 0,
+                    rotate: 60,
                     stretch: 0,
                     depth: 100,
-                    modifier: 3,
+                    modifier: 2,
                     slideShadows: true,
                     scale: 2
                 }}
@@ -41,46 +47,43 @@ const SwiperDemo = () => {
                 className="swiper mySwiper"
             >
                 <SwiperSlide className=''>
-                    <Image
-                        alt='image'
-                        width={300} height={300}
-                        src={'https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExbWZhY2M3amt0aGFwNjlkOHF2bnV2MXQ5bmI1bmp2a2l4NW1ld3N5diZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/15Z0eVULyQqiV65B7L/giphy.gif'} />
+                    <div className="w-[450px] h-[300px] relative mx-auto group overflow-hidden rounded-lg ">
+                        <Image
+                            className=" absolute group-hover:scale-110  z-0 rounded-lg transition-all duration-300 hover:scale-110" alt='image'
+                            fill
+                            src={redak} />
+                        <div className=' p-10 flex relative items-start z-50 bg-black bg-opacity-50 flex-col w-full h-full justify-end '>
+                            <h1 className='text-4xl text-[#E7B856] font-bold'>Redak</h1>
+                            <div className='flex flex-row justify-between w-full items-center'>
+                                <h1 className='text-lg text-white font-bold'>Medical WebSite</h1>
+                                <Link href='' className='text-base bg-[#E7B856] py-1.5 px-2 rounded-lg text-white font-bold'>More</Link>
+                            </div>
+                        </div>
+                    </div>
                 </SwiperSlide>
                 <SwiperSlide className=''>
-                    <Image
-                        alt='image'
-                        width={300} height={300}
-                        src={'https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExbWZhY2M3amt0aGFwNjlkOHF2bnV2MXQ5bmI1bmp2a2l4NW1ld3N5diZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/15Z0eVULyQqiV65B7L/giphy.gif'} />
+                    <div className="w-[450px] h-[300px] relative mx-auto overflow-hidden rounded-lg ">
+                        <Image
+                            className=" relative z-0 rounded-lg transition-all duration-300 hover:scale-110" alt='image'
+                            fill
+                            src={redak} />
+                    </div>
                 </SwiperSlide>
-                <SwiperSlide className='swiper-slide'>
-                    <Image
-                        alt='image'
-                        width={300} height={300}
-                        src={'https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExbWZhY2M3amt0aGFwNjlkOHF2bnV2MXQ5bmI1bmp2a2l4NW1ld3N5diZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/15Z0eVULyQqiV65B7L/giphy.gif'} />
+                <SwiperSlide className=''>
+                    <div className="w-[450px] h-[300px] relative mx-auto overflow-hidden rounded-lg ">
+                        <Image
+                            className=" relative z-0 rounded-lg transition-all duration-300 hover:scale-110" alt='image'
+                            fill
+                            src={redak} />
+                    </div>
                 </SwiperSlide>
-                <SwiperSlide className='swiper-slide'>
-                    <Image
-                        alt='image'
-                        width={300} height={300}
-                        src={'https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExbWZhY2M3amt0aGFwNjlkOHF2bnV2MXQ5bmI1bmp2a2l4NW1ld3N5diZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/15Z0eVULyQqiV65B7L/giphy.gif'} />
-                </SwiperSlide>
-                <SwiperSlide className='swiper-slide'>
-                    <Image
-                        alt='image'
-                        width={300} height={300}
-                        src={'https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExbWZhY2M3amt0aGFwNjlkOHF2bnV2MXQ5bmI1bmp2a2l4NW1ld3N5diZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/15Z0eVULyQqiV65B7L/giphy.gif'} />
-                </SwiperSlide>
-                <SwiperSlide className='swiper-slide'>
-                    <Image
-                        alt='image'
-                        width={300} height={300}
-                        src={'https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExbWZhY2M3amt0aGFwNjlkOHF2bnV2MXQ5bmI1bmp2a2l4NW1ld3N5diZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/15Z0eVULyQqiV65B7L/giphy.gif'} />
-                </SwiperSlide>
-                <SwiperSlide className='swiper-slide'>
-                    <Image
-                        alt='image'
-                        width={300} height={300}
-                        src={'https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExbWZhY2M3amt0aGFwNjlkOHF2bnV2MXQ5bmI1bmp2a2l4NW1ld3N5diZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/15Z0eVULyQqiV65B7L/giphy.gif'} />
+                <SwiperSlide className=''>
+                    <div className="w-[450px] h-[300px] relative mx-auto overflow-hidden rounded-lg ">
+                        <Image
+                            className=" relative z-0 rounded-lg transition-all duration-300 hover:scale-110" alt='image'
+                            fill
+                            src={redak} />
+                    </div>
                 </SwiperSlide>
             </Swiper>
         </div>
