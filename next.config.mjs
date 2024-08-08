@@ -1,13 +1,16 @@
 import { withNextVideo } from "next-video/process";
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    contentSecurityPolicy: {
-        directives: {
-          defaultSrc: ["'self'"],
-          frameSrc: ["https://allowed-iframe-host.com"],
-          // ...
-        },
-      }
+  images: {
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "i.giphy.com",
+        port: "",
+        pathname: "/**",
+      },
+    ],
+  }
 };
 
 export default withNextVideo(nextConfig);

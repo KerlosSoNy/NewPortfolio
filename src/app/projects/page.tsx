@@ -16,7 +16,7 @@ const getData = async () => {
 export default async function Projects() {
     const posts = await getData()
     return (
-        <>
+        <div className="bg-[#030303]">
             {
                 posts.map((post: any) => (
                     <div key={post.id} className="p-4 m-4">
@@ -29,7 +29,7 @@ export default async function Projects() {
                     </div>
                 ))
             }
-        </>
+        </div>
 
     )
 }

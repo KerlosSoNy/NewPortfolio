@@ -6,13 +6,21 @@ import Navbar from "@/components/navbar/Navbar";
 import SecondSection from "@/components/SecondSection/SecondSection";
 import AboutSection from '@/components/AboutSection/AboutSection';
 import { Suspense } from 'react';
+import ProjectsSection from './projects/components/ProjectsSection';
+
+import { Platypi } from 'next/font/google';
 
 const VideoSection = dynamic(() => import("@/components/VideoSection/VideoSection"), { ssr: true })
 const ThierdSections = dynamic(() => import("@/components/ThierdSection/ThierdSections"), { ssr: true })
 
+
+const platypi = Platypi({
+  subsets: ['latin'],
+});
+
 export default function Home() {
   return (
-    <div className="relative flex min-h-screen flex-col items-center overflow-hidden w-screen">
+    <div className={`${platypi.className} relative flex min-h-screen flex-col items-center overflow-hidden w-screen`}>
       <div className='z-50 w-full h-full overflow-hidden bg-black bg-opacity-90'>
         <Navbar />
         <div className="flex flex-col gap-16 lg:mb-20 md:mb-0 mb-0 ">
@@ -28,6 +36,9 @@ export default function Home() {
         </div>
         <div className="lg:hidden md:hidden block">
           <MyBrain />
+        </div>
+        <div className='mt-[17rem]'>
+          <ProjectsSection />
         </div>
       </div>
     </div>
