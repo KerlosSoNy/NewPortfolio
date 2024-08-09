@@ -31,13 +31,13 @@ export default function Home() {
           </Suspense>
           <SecondSection />
         </div>
-        <div className="lg:block md:block hidden">
+        <div className="lg:block md:hidden hidden">
           <VideoSection />
         </div>
-        <div className="lg:hidden md:hidden block">
+        <div className="lg:hidden md:block block">
           <MyBrain />
         </div>
-        <div className='mt-[17rem]'>
+        <div className='mt-[13rem]'>
           <ProjectsSection />
         </div>
       </div>
