@@ -9,6 +9,7 @@ import 'swiper/css';
 
 import Image from 'next/image';
 import Link from 'next/link';
+import ProjectCard from './ProjectCard';
 
 const SwiperDemo = () => {
 
@@ -48,43 +49,17 @@ const SwiperDemo = () => {
                     modules={[Autoplay]}
                     className="swiper mySwiper"
                 >
-                    <SwiperSlide className=''>
-                        <div className="lg:w-[450px] md:w-[550px] w-[280px] h-[300px] relative mx-auto group overflow-hidden rounded-lg ">
-                            <Image
-                                className=" absolute group-hover:scale-110  z-0 rounded-lg transition-all duration-300 hover:scale-110" alt='image'
-                                fill
-                                src={redak} />
-                            <div className=' p-10 flex relative items-start z-50 bg-black bg-opacity-50 flex-col w-full h-full justify-end '>
-                                <h1 className='text-4xl text-[#E7B856] font-bold'>Redak</h1>
-                                <div className='flex flex-row justify-between w-full items-center'>
-                                    <h1 className='text-lg text-white font-bold'>Medical WebSite</h1>
-                                </div>
-                            </div>
-                        </div>
+                    <SwiperSlide>
+                        <ProjectCard to='/projects/1' title={"Redak"} image={redak} short_description={"Medical Website"} />
                     </SwiperSlide>
-                    <SwiperSlide className=''>
-                        <div className="lg:w-[450px] md:w-[550px] w-[280px] h-[300px] relative mx-auto overflow-hidden rounded-lg ">
-                            <Image
-                                className=" relative z-0 rounded-lg transition-all duration-300 hover:scale-110" alt='image'
-                                fill
-                                src={redak} />
-                        </div>
+                    <SwiperSlide>
+                        <ProjectCard to='/projects/1' title={"Redak"} image={redak} short_description={"Medical Website"} />
                     </SwiperSlide>
-                    <SwiperSlide className=''>
-                        <div className="lg:w-[450px] md:w-[550px] w-[280px] h-[300px] relative mx-auto overflow-hidden rounded-lg ">
-                            <Image
-                                className=" relative z-0 rounded-lg transition-all duration-300 hover:scale-110" alt='image'
-                                fill
-                                src={redak} />
-                        </div>
+                    <SwiperSlide>
+                        <ProjectCard to='/projects/1' title={"Redak"} image={redak} short_description={"Medical Website"} />
                     </SwiperSlide>
-                    <SwiperSlide className=''>
-                        <div className="lg:w-[450px] md:w-[550px] w-[280px] h-[300px] relative mx-auto overflow-hidden rounded-lg ">
-                            <Image
-                                className=" relative z-0 rounded-lg transition-all duration-300 hover:scale-110" alt='image'
-                                fill
-                                src={redak} />
-                        </div>
+                    <SwiperSlide>
+                        <ProjectCard to='/projects/1' title={"Redak"} image={redak} short_description={"Medical Website"} />
                     </SwiperSlide>
                 </Swiper>
             </div>

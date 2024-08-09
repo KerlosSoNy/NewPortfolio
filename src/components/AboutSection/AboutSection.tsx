@@ -1,7 +1,7 @@
 
 export default function AboutSection() {
     return (
-        <div className="w-full my-5">
+        <div className="w-full mb-5 mt-20">
             <h1 className="text-4xl w-full text-center">About Me</h1>
             <p className="md:w-[60%] w-[85%] lg:w-[65%] mx-auto text-center text-xl md:text-2xl lg:text-2xl mt-8">
                 {
