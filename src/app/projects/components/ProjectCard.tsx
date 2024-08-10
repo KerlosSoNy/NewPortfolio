@@ -12,8 +12,8 @@ interface ProjectCardProps {
 
 export default function ProjectCard({ title, image, short_description, to }: ProjectCardProps) {
     return (
-        <div className='lg:w-[450px] md:w-[550px] w-[280px] h-[300px] relative mx-auto group overflow-hidden rounded-lg'>
-            <Link href={to} className="lg:w-[450px] md:w-[550px] w-[280px] h-[300px] ">
+        <div className='lg:w-[450px] md:w-[600px] w-[280px] h-[300px] relative mx-auto group overflow-hidden rounded-lg'>
+            <Link href={to} className="lg:w-[450px] md:w-[6000px] w-[280px] h-[300px] ">
                 <Image
                     className=" absolute group-hover:scale-110  z-0 rounded-lg transition-all duration-300 hover:scale-110" alt='image'
                     fill

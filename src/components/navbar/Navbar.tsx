@@ -52,7 +52,7 @@ export default function Navbar() {
                             <Link href='/'>Bio</Link>
                         </motion.li>
                         <motion.li onPan={onPan} whileHover={{ scale: 1.2 }} whileTap={{ scale: 1 }} variants={itemVariants}>
-                            <Link href='/'>Contact</Link>
+                            <Link href='contactMe'>Contact</Link>
                         </motion.li>
                     </ul>
                 </motion.article>
