@@ -3,6 +3,7 @@ import { Montserrat } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/navbar/Navbar";
 import { Toaster } from "react-hot-toast";
+import Footer from "@/components/Footer.tsx/Footer";
 
 const montserrat = Montserrat({ subsets: ["latin"] });
 
@@ -18,10 +19,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`relative ${montserrat.className}`} >
+      <body className={`relative ${montserrat.className} bg-[#000102]`} >
         <Toaster />
         <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );
