@@ -19,7 +19,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`relative ${montserrat.className} bg-[#000102]`} >
+      <body className={`relative w-screen overflow-x-hidden ${montserrat.className} bg-[#000102]`} >
         <Toaster />
         <Navbar />
         {children}
