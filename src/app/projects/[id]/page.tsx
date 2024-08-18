@@ -1,15 +1,14 @@
-import PostUser from "@/components/PostUser/PostUser"
 
+import { ProjectsData } from "@/lip/Project"
+// const getData = async ({ id }: { id: string }) => {
+//     const res = await fetch(`https://jsonplaceholder.typicode.com/todos/${id}`, { next: { revalidate: 60 } })
 
-const getData = async ({ id }: { id: string }) => {
-    const res = await fetch(`https://jsonplaceholder.typicode.com/todos/${id}`, { next: { revalidate: 60 } })
+//     if (!res.ok) {
+//         throw new Error('Failed to fetch data')
+//     }
 
-    if (!res.ok) {
-        throw new Error('Failed to fetch data')
-    }
-
-    return res.json()
-}
+//     return res.json()
+// }
 
 const SinglePost = async ({ params }: {
     params: {
@@ -17,13 +16,11 @@ const SinglePost = async ({ params }: {
     }
 }) => {
     const { id } = params
-    const post = await getData({ id })
-
-    console.log(post)
+    let data = ProjectsData.filter((project: any) => project.id == id)[0]
+    console.log(data)
     return (
-        <div>
-            <span>{post.id}</span>
-            <PostUser Userid={post.userId} />
+        <div className="bg-[#030303] pt-[85px] flex">
+            Kero
         </div>
     )
 }

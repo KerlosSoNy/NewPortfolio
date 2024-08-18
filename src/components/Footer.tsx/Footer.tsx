@@ -56,35 +56,6 @@ export default function Footer() {
                     </div>
                 </motion.div>
             </div>
-            <nav className="flex justify-center flex-wrap gap-6 text-gray-500 font-medium">
-                <motion.div
-                    variants={itemVariants}>
-                    <div className='flex flex-row'>
-                        <MagneticComponent >
-                            <Link target='_blank' href='https://www.linkedin.com/in/kerlos-m-61759a105/'>
-                                Home
-                            </Link>
-                        </MagneticComponent>
-                        <MagneticComponent >
-                            <Link target='_blank' href='https://www.linkedin.com/in/kerlos-m-61759a105/'>
-                                Projects
-                            </Link>
-                        </MagneticComponent>
-                        <MagneticComponent >
-                            <Link target='_blank' href='https://github.com/KerlosSoNy'>
-                                Bio
-                            </Link>
-                        </MagneticComponent>
-                        <MagneticComponent >
-                            <Link target='_blank' href='https://drive.google.com/file/d/1SouqK6IBhYD51OxEi4TipwDhbABI26ES/view?usp=sharing'>
-                                Contact
-                            </Link>
-                        </MagneticComponent>
-                    </div>
-                </motion.div>
-            </nav>
-
-
             <p className="text-center text-gray-700 font-medium">&copy; {currentYear} Kerlos Magdy. All rights reservered.</p>
         </footer>
     )

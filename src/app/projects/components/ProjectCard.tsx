@@ -5,7 +5,7 @@ import { SwiperSlide } from 'swiper/react'
 
 interface ProjectCardProps {
     title: string,
-    image: StaticImageData,
+    image: StaticImageData | string,
     short_description: string,
     to: string
 }
@@ -15,7 +15,7 @@ export default function ProjectCard({ title, image, short_description, to }: Pro
         <div className='lg:w-[450px] md:w-[600px] w-[280px] h-[300px] relative mx-auto group overflow-hidden rounded-lg'>
             <Link href={to} className="lg:w-[450px] md:w-[6000px] w-[280px] h-[300px] ">
                 <Image
-                    className=" absolute group-hover:scale-110  z-0 rounded-lg transition-all duration-300 hover:scale-110" alt='image'
+                    className=" absolute group-hover:scale-110 object-scale-down  z-0 rounded-lg transition-all duration-300" alt='image'
                     fill
                     src={image} />
                 <div className=' p-10 flex relative items-start z-50 bg-black bg-opacity-50 flex-col w-full h-full justify-end '>

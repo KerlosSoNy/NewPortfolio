@@ -10,7 +10,7 @@ import 'swiper/css';
 import Image from 'next/image';
 import Link from 'next/link';
 import ProjectCard from './ProjectCard';
-
+import { ProjectsData } from '@/lip/Project';
 const SwiperDemo = () => {
 
     const Data = [{
@@ -59,18 +59,15 @@ const SwiperDemo = () => {
                     modules={[Autoplay]}
                     className="swiper mySwiper"
                 >
-                    <SwiperSlide className=''>
-                        <ProjectCard to='/projects/1' title={"Redak"} image={redak} short_description={"Medical Website"} />
-                    </SwiperSlide>
-                    <SwiperSlide className=''>
-                        <ProjectCard to='/projects/1' title={"Redak"} image={redak} short_description={"Medical Website"} />
-                    </SwiperSlide>
-                    <SwiperSlide className=''>
-                        <ProjectCard to='/projects/1' title={"Redak"} image={redak} short_description={"Medical Website"} />
-                    </SwiperSlide>
-                    <SwiperSlide className=''>
-                        <ProjectCard to='/projects/1' title={"Redak"} image={redak} short_description={"Medical Website"} />
-                    </SwiperSlide>
+                    {
+                        ProjectsData.map((project: any) => {
+                            return (
+                                <SwiperSlide className=''>
+                                    <ProjectCard to={`/projects/${project.id}`} title={project.title} image={project.image} short_description={project.short_description} />
+                                </SwiperSlide>
+                            )
+                        })
+                    }
                 </Swiper>
             </div>
         </div>
