@@ -60,9 +60,9 @@ const SwiperDemo = () => {
                     className="swiper mySwiper"
                 >
                     {
-                        ProjectsData.map((project: any) => {
+                        ProjectsData.map((project: any, index: number) => {
                             return (
-                                <SwiperSlide className=''>
+                                <SwiperSlide key={index} className=''>
                                     <ProjectCard to={`/projects/${project.id}`} title={project.title} image={project.image} short_description={project.short_description} />
                                 </SwiperSlide>
                             )
