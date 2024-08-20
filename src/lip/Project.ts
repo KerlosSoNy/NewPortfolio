@@ -26,4 +26,13 @@ export const ProjectsData = [{
     short_description: "Offline Note With localStorage",
     github:'https://github.com/KerlosSoNy/Personal-Note',
     demo:'https://admirable-figolla-887a68.netlify.app/'
-}]
+},
+{
+    id: 5,
+    title: 'Z-Shop',
+    image: '/assets/projects/zimage.png',
+    short_description: "Simple E-Commerce",
+    github:'https://github.com/KerlosSoNy/Z-SHOP',
+    demo:'https://zshopz.netlify.app/'
+}
+]
