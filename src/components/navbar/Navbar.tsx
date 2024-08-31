@@ -49,7 +49,7 @@ export default function Navbar() {
                             <Link href='/projects'>Projects</Link>
                         </motion.li>
                         <motion.li whileHover={{ scale: 1.2 }} whileTap={{ scale: 1 }} variants={itemVariants}>
-                            <Link href='/'>Bio</Link>
+                            <Link href='/bio'>Bio</Link>
                         </motion.li>
                         <motion.li onPan={onPan} whileHover={{ scale: 1.2 }} whileTap={{ scale: 1 }} variants={itemVariants}>
                             <Link href='contactMe'>Contact</Link>
