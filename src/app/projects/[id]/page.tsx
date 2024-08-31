@@ -10,13 +10,14 @@ import { ProjectsData } from "@/lip/Project"
 //     return res.json()
 // }
 
+
 const SinglePost = async ({ params }: {
     params: {
         id: string
     }
 }) => {
     const { id } = params
-    let data = ProjectsData.filter((project: any) => project.id == id)[0]
+    const data = ProjectsData.filter((project: any) => project.id == id)[0]
     console.log(data)
     return (
         <div className="bg-[#030303] pt-[85px] flex">

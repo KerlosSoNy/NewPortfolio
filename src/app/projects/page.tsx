@@ -1,5 +1,4 @@
 import Link from "next/link"
-import { unstable_noStore as noStore } from "next/cache"
 import Image from "next/image"
 import { FaGithub } from "react-icons/fa"
 import { MdLiveTv } from "react-icons/md";
@@ -20,7 +19,6 @@ import { ProjectsData } from '../../lip/Project'
 // }
 export default async function Projects() {
     // const posts = await getData()
-    console.log(ProjectsData)
     return (
         <div className="bg-[#030303] pt-[85px] flex">
             <div className="flex flex-col w-full mb-10">
@@ -38,10 +36,13 @@ export default async function Projects() {
                                         <h1 className="text-4xl text-[#ffc363]">{project.title}</h1>
                                         <span>{project.short_description}</span>
                                         <div className="flex flex-row mt-5 items-center gap-5 border-t-2 border-[#282828] justify-evenly p-3">
-                                            <Link target="_blank" href={project.github} className="group relative">
-                                                <h1 className="text-base hidden peer group-hover:block absolute bg-white text-black px-2 py-1.5 rounded triangle-container -top-12 -right-[20px]">Github</h1>
-                                                <FaGithub className='text-3xl' />
-                                            </Link>
+                                            {
+                                                project.github &&
+                                                <Link target="_blank" href={project.github} className="group relative">
+                                                    <h1 className="text-base hidden peer group-hover:block absolute bg-white text-black px-2 py-1.5 rounded triangle-container -top-12 -right-[20px]">Github</h1>
+                                                    <FaGithub className='text-3xl' />
+                                                </Link>
+                                            }
                                             <Link target="_blank" href={project.demo} className="group relative">
                                                 <h1 className="text-sm text-center hidden peer group-hover:block absolute bg-white w-fit text-black px-2 py-1.5 rounded triangle-container -top-16 -right-[14px]">Live Demo</h1>
                                                 <MdLiveTv className='text-3xl' />

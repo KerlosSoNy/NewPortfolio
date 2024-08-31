@@ -1,24 +1,13 @@
 'use client'
-// components/SwiperDemo.tsx
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay } from 'swiper/modules';
 import redak from '../../../../public/assets/projects/redak.png'
-// Import Swiper styles
 import 'swiper/css';
 
-import Image from 'next/image';
-import Link from 'next/link';
 import ProjectCard from './ProjectCard';
 import { ProjectsData } from '@/lip/Project';
 const SwiperDemo = () => {
-
-    const Data = [{
-        id: 1,
-        title: 'Redak',
-        image: redak,
-        short_description: "Medical WebSite"
-    }]
     return (
         <div className='flex flex-col'>
             {/* Desktop */}
