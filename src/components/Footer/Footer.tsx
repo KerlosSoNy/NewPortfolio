@@ -24,7 +24,7 @@ export default function Footer() {
         { clamp: false }
     )
     return (
-        <footer className="flex flex-col gap-3 justify-center m-10 bg-[#000102]">
+        <footer className="flex flex-col gap-3 justify-center m-20 pt-10 bg-[#000102]">
             <div className='w-full flex flex-row justify-center'>
                 <motion.div
                     className='w-[55px] h-[55px] relative'

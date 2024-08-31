@@ -3,7 +3,7 @@ import { Montserrat } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/navbar/Navbar";
 import { Toaster } from "react-hot-toast";
-import Footer from "@/components/Footer.tsx/Footer";
+import Footer from "@/components/Footer/Footer";
 
 const montserrat = Montserrat({ subsets: ["latin"] });
 
