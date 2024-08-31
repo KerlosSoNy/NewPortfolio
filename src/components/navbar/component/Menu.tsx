@@ -40,10 +40,10 @@ export default function MenuNav() {
                             <MenuToggle open={open} setOpen={setOpen} />
                         </div>
                         <div className='flex flex-col w-full pt-10 justify-center align-middle items-center gap-10 lg:px-20 md:px-10 px-10'>
-                            <h1>Home</h1>
-                            <h1>Projects</h1>
-                            <h1>Bio</h1>
-                            <h1>Contact</h1>
+                            <Link href='/'>Home</Link>
+                            <Link href='/projects'>Projects</Link>
+                            <Link href='/bio'>Bio</Link>
+                            <Link href='/contactMe'>Contact</Link>
                         </div>
                         <div className='flex flex-row justify-center w-full mt-10'>
                             <motion.div
