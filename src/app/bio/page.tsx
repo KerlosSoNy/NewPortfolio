@@ -5,7 +5,7 @@ export default function Bio() {
         <div className="bg-[#030303] pt-[85px] flex flex-col">
             <div className="flex md:flex-row flex-col lg:flex-row justify-center items-center mx-auto gap-20 pt-10">
                 <div className="w-[90%] md:w-[50%] lg:w-[50%] flex flex-row justify-center md:justify-end lg:justify-end ">
-                    <Image src='/assets/me.webp' className="object-scale-down" alt='me' width={300} height={200} />
+                    <Image src='/assets/me.webp' className="object-scale-down rounded-lg" alt='me' width={300} height={200} />
                 </div>
                 <div className="flex flex-col justify-start items-start w-[80%] md:w-[50%] lg:w-[50%]">
                     <div className="flex flex-col justify-center">
