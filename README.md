@@ -30,21 +30,21 @@ Welcome to my new portfolio project! This repository contains the source code fo
 To run this project locally, follow these steps:
 
 1. **Clone the repository:**
-   \`\`\`bash
+   ```bash
    git clone https://github.com/KerlosSoNy/NewPortfolio.git
-   \`\`\`
+   ```
 2. **Navigate to the project directory:**
-   \`\`\`bash
+   ```bash
    cd NewPortfolio
-   \`\`\`
+   ```
 3. **Install the dependencies:**
-   \`\`\`bash
+   ```bash
    npm install
-   \`\`\`
+   ```
 4. **Run the development server:**
-   \`\`\`bash
+   ```bash
    npm run dev
-   \`\`\`
+   ```
 
 ## Usage
 After running the development server, open your browser and navigate to \`http://localhost:3000\` to view the portfolio.
@@ -52,7 +52,7 @@ After running the development server, open your browser and navigate to \`http:/
 ## Project Structure
 Here is a brief overview of the project structure:
 
-\`\`\`
+```
 NewPortfolio/
 ├── public/                 # Static files and assets
 ├── src/                    # Source code
@@ -64,7 +64,7 @@ NewPortfolio/
 ├── README.md               # Project documentation
 ├── package.json            # NPM scripts and dependencies
 └── tsconfig.json           # TypeScript configuration
-\`\`\`
+```
 
 ## Contributing
 If you find any issues or have suggestions for improvements, feel free to open an issue or submit a pull request.
