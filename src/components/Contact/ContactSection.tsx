@@ -1,4 +1,5 @@
 'use client'
+import Image from 'next/image';
 import React from 'react'
 import toast from 'react-hot-toast';
 
@@ -44,13 +45,8 @@ export default function ContactSection() {
                 </form>
             </div>
             <div className="w-full md:w-1/2 p-4 flex justify-center">
-                <div className="rounded-full overflow-hidden w-[35rem] h-[30rem]">
-                    <iframe
-                        className="w-[35rem] h-[35rem]"
-                        src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d6901.88987905281!2d31.366941199999996!3d30.12438900000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2s!5e0!3m2!1sen!2seg!4v1723284193989!5m2!1sen!2seg"
-                        loading="lazy"
-                        referrerPolicy="no-referrer-when-downgrade"
-                    ></iframe>
+                <div className="relative overflow-hidden w-[35rem] h-[30rem]">
+                    <Image fill src='/assets/ii.gif' alt='normal gif' />
                 </div>
             </div>
         </div>
