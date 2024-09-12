@@ -2,7 +2,6 @@
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay } from 'swiper/modules';
-import redak from '../../../../public/assets/projects/redak.png'
 import 'swiper/css';
 
 import ProjectCard from './ProjectCard';

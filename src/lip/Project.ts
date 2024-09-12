@@ -44,7 +44,14 @@ export const ProjectsData = [{
     title:'Lampe',
     image:"/assets/projects/lampe.webp",
     short_description:"Lamp E-Commerce",
-    description:"This Arabic-language website is dedicated to showcasing modern lighting solutions, featuring a variety of products tailored to enhance interior spaces. The site is designed with a focus on aesthetics and user experience, providing detailed product information and high-quality visuals. Built with advanced web technologies, the platform ensures a smooth, responsive experience across all devices. This project highlights proficiency in creating visually appealing, multilingual websites that cater to specific regional audiences, all while maintaining optimal performance and accessibility.",
+    description:"Modern lighting solutions, featuring a variety of products tailored to enhance interior spaces. The site is designed with a focus on aesthetics and user experience, providing detailed product information and high-quality visuals. Built with advanced web technologies, the platform ensures a smooth, responsive experience across all devices. This project highlights proficiency in creating visually appealing, multilingual websites that cater to specific regional audiences, all while maintaining optimal performance and accessibility.",
     demo:"https://lampe-site.doctor-code.net/ar"
+},{
+    id: 7,
+    title:'NgoGiza',
+    image:"/assets/projects/neoGiza.webp",
+    short_description:"Website focuses on community ",
+    description:"The NGO Giza website highlights the organization's focus on community development, supporting individuals through charitable initiatives such as water well projects, medical assistance, and social welfare programs. It also promotes volunteer opportunities, donation campaigns, and educational courses aimed at fostering a stable and balanced society. The website provides various ways for people to get involved through donations, volunteering, and partnerships.",
+    demo:"https://ngogiza.com/ar"
 }
 ]
