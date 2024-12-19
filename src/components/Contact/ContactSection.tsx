@@ -28,10 +28,10 @@ export default function ContactSection() {
         event.target.reset();
     }
     return (
-        <div className="flex flex-wrap justify-between items-center h-auto p-5 pl-[6%] pt-[9%]">
-            <div className="w-full md:w-2/5 p-4">
-                <h2 className="text-xl md:text-7xl font-semibold mb-5">GET IN TOUCH!</h2>
-                <form className="space-y-4" onSubmit={handleSubmit}>
+        <div className="flex flex-wrap w-screen overflow-hidden justify-center items-center h-auto p-5 pl-[6%] pt-[9%]">
+            <div className="w-[98%] ms-10 md:ms-0 px-2 md:w-2/5 p-4">
+                <h2 className="text-2xl md:text-7xl font-semibold mb-5 mt-16 lg:mt-0">GET IN TOUCH!</h2>
+                <form className="flex flex-col gap-2 w-[90%]" onSubmit={handleSubmit}>
                     <div>
                         <input type="text" required id="fullName" name="fullName" placeholder='Full Name' className="mt-1 p-4 w-full border rounded-md text-black" />
                     </div>
@@ -46,7 +46,7 @@ export default function ContactSection() {
             </div>
             <div className="w-full md:w-1/2 p-4 flex justify-center">
                 <div className="relative overflow-hidden w-[35rem] h-[30rem]">
-                    <Image fill src='/assets/ii.gif' alt='normal gif' />
+                    <Image fill src='/assets/ii.gif' alt='normal gif' className='object-scale-down' />
                 </div>
             </div>
         </div>

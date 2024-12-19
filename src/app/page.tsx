@@ -31,12 +31,7 @@ export default function Home() {
           </Suspense>
           <SecondSection />
         </div>
-        <div className="lg:block md:hidden hidden">
-          <VideoSection />
-        </div>
-        <div className="lg:hidden md:block block">
-          <MyBrain />
-        </div>
+        <MyBrain />
         <div className='mt-[15rem]'>
           <ProjectsSection />
         </div>
